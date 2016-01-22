@@ -1,5 +1,5 @@
 describe('errorInput', function() {
-  it("will return error message if empty input is submitted", function(){
-    expect(errorInput("")).to.equal("errorMessage")
+  it("will handle empty space input errors with an error message", function(){
+    expect(errorInput("")).to.eql(["error message"]);
   });
 });
