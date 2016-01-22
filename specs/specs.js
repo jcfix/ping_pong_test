@@ -17,7 +17,7 @@ describe("countUp", function() {
 // pingPong Function //
 describe('pingPong', function() {
   it ("will display the number that is entered by the user", function() {
-    expect(pingPong(25)).to.equal(25);
+    expect(pingPong(58)).to.equal(58);
   });
   it ("will replace numbers divisible by 3 and 5 with pingpong", function() {
     expect(pingPong(15)).to.equal("pingpong");

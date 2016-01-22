@@ -26,8 +26,9 @@ function countUp(number) {
 //  Script for pingPong//
 function pingPong(number) {
   var endNumber = number
-  if (number % 3 === 0 && number % 5 === 0) {
+  if (number % 5 === 0 && number % 3 === 0) {
     return "pingpong";
-  } else
+  } else if (number % 5 === 0)
+  return "pong";
   return endNumber;
 };
