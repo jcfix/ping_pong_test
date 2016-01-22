@@ -1,6 +1,6 @@
 // Business logic //
 
-// 1st Script for errorInput //
+// errorInput //
 var errorInput = function(number){
   var output = [];
 
@@ -11,7 +11,7 @@ var errorInput = function(number){
 };
 
 
-// Combines countUp and pingPong functions //
+// pingPong  //
 
 var pingPong = function (number) {
   var numberArray = [];
@@ -38,19 +38,20 @@ var pingPong = function (number) {
 
 
 // User-interface Logic //
-// $(document).ready(function() {
-//   $(".btn#getNumber").click(function(event){
-//     var number = parseInt($("input#userNumber").val());
-//     var returnedArray = pingPong(number);
-//
-//     for (var i = 0; i < returnedArray.length; i++) {
-//       var listItem = document.createElement("li");
-//       listItem.innerHTML = returnedArray[i];
-//       var numberList = document.getElementById("ping pong");
-//       numberList.appendChild(listItem);
-//     }
-//
-//     $("#listofNumbers").show();
-//     event.preventDefault()
-//   });
-// });
+$(document).ready(function() {
+  $(".btn#getNumber").click(function(event){
+    var number = parseInt($("input#userNumber").val());
+
+    var returnedArray = pingPong(number);
+
+    for (var i = 0; i < returnedArray.length; i++) {
+      var listItem = document.createElement("li");
+      listItem.innerHTML = returnedArray[i];
+      var numberList = document.getElementById("numArray");
+      numberList.appendChild(listItem);
+    }
+
+    $("#listofNumbers").show();
+    event.preventDefault()
+  });
+});
