@@ -6,20 +6,22 @@ describe('errorInput', function() {
 });
 
 
+// countUp Function //
+describe("countUp", function() {
+  it("will count up to a user's number by 1 starting at 1 and put the numbers into an array", function() {
+    expect(countUp(2)).to.eql([1,2]);
+  });
+});
+
+
 // pingPong Function //
-describe('pingPong', function(){
+describe('pingPong', function() {
   it ("will display the number that is entered by the user", function() {
     expect(pingPong(25)).to.equal(25);
   });
 });
 
 
-// countTo Function //
-describe('countTo', function(){
-  it("will count to the user's number by starting at 1, and in increments of 1, and will display the sequence in an array", function() {
-    expect(countTo(6)).to.equal(1,2,3,4,5,6);
-  });
-});
 
 //   it ("will display the sequence of numbers starting with 1 and ending with the number that is entered by the user", function() {
 //     expect(pingPong(50)).to.equal(50);
