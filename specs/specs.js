@@ -19,19 +19,14 @@ describe('pingPong', function() {
   it ("will display the number that is entered by the user", function() {
     expect(pingPong(25)).to.equal(25);
   });
+  it("will replace numbers divisible by 3 and 5 with 'ping pong'"), function () {
+    expect(pingPong(15)).to.equal('ping pong');
+  });
 });
 
 
 
-//   it ("will display the sequence of numbers starting with 1 and ending with the number that is entered by the user", function() {
-//     expect(pingPong(50)).to.equal(50);
-//   });
-//
-//
-//   it ("will replace numbers divisible by three and five with 'ping pong'", function() {
-//     expect(pingPong(15)).to.equal("ping pong");
-//   });
-// });
+
 
 
 //  Logic //
