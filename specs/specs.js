@@ -25,6 +25,9 @@ describe('pingPong', function() {
   it ("will replace numbers divisible by 5 with pong", function() {
     expect(pingPong(25)).to.equal("pong");
   });
+  it ("will replace numbers divisible by 3 with ping", function() {
+    expect(pingPong(12)).to.equal("ping");
+  });
 });
 
 
