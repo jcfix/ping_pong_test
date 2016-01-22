@@ -19,8 +19,8 @@ describe('pingPong', function() {
   it ("will display the number that is entered by the user", function() {
     expect(pingPong(25)).to.equal(25);
   });
-  it("will replace numbers divisible by 3 and 5 with 'ping pong'"), function () {
-    expect(pingPong(15)).to.equal('ping pong');
+  it ("will replace numbers divisible by 3 and 5 with pingpong", function() {
+    expect(pingPong(15)).to.equal("pingpong");
   });
 });
 
