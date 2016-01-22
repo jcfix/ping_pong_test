@@ -15,13 +15,20 @@ $ open index.html
 
 OR
 
-Visit LINK GOES HERE.
+Visit http://jcfix.github.io/ping_pong_test/
 Enjoy.
 
 
 ## Technologies Used
 
-HTML5, CSS3, Bootstrap, Javascript, Mocha, Chai
+* HTML5
+* CSS3
+* Bootstrap
+* Javascript
+* jQuery
+* Mocha 2.3.4
+* Chai 3.4.2
+* Animate.css
 
 ### Legal
 
