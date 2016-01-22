@@ -16,30 +16,13 @@ describe("countUp", function() {
 
 // pingPong Function //
 describe('pingPong', function() {
-  it ("will display the number that is entered by the user", function() {
-    expect(pingPong(58)).to.equal(58);
-  });
-  it ("will replace numbers divisible by 3 and 5 with pingpong", function() {
+  it ("will replace numbers divisible by 3 and 5 in the array with pingpong", function() {
     expect(pingPong(15)).to.equal("pingpong");
   });
-  it ("will replace numbers divisible by 5 with pong", function() {
-    expect(pingPong(25)).to.equal("pong");
+  it ("will replace numbers divisible by 5 in the array with pong", function() {
+    expect(pingPong(5)).to.equal("pong");
   });
-  it ("will replace numbers divisible by 3 with ping", function() {
-    expect(pingPong(12)).to.equal("ping");
+  it ("will replace numbers divisible by 3 in the array with ping", function() {
+    expect(pingPong(3)).to.equal("ping");
   });
 });
-
-
-
-
-
-
-//  Logic //
-// If a number between 1-userInput % 3 === 0 //
-  // Return "ping" //
-  // Else if a number between 1-userInput % 5 === 0 //
-  // Return "pong" //
-  // Else if a number between 1-userInput % 15 === 0 //
-  // Return "ping pong" //
-// Else, return number //

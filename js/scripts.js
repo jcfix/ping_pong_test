@@ -22,7 +22,6 @@ function countUp(number) {
 
 
 
-
 //  Script for pingPong//
 function pingPong(number) {
   var endNumber = number
@@ -35,3 +34,25 @@ function pingPong(number) {
   }
   return endNumber;
 };
+
+
+
+
+
+// User-interface Logic //
+// $(document).ready(function() {
+//   $(".btn#getNumber").click(function(event){
+//     var number = parseInt($("input#userNumber").val());
+//     var returnedArray = pingPong(number);
+//
+//     for (var i = 0; i < returnedArray.length; i++) {
+//       var listItem = document.createElement("li");
+//       listItem.innerHTML = returnedArray[i];
+//       var numberList = document.getElementById("ping pong");
+//       numberList.appendChild(listItem);
+//     }
+//
+//     $("#listofNumbers").show();
+//     event.preventDefault()
+//   });
+// });
