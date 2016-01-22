@@ -37,10 +37,16 @@ var pingPong = function (number) {
 
 
 
+
+
 // User-interface Logic //
 $(document).ready(function() {
   $(".btn#getNumber").click(function(event){
     var number = parseInt($("input#userNumber").val());
+
+    if (number <=0 ) {
+      alert("That won't do! How about a number greater than or equal to 1?")
+    }
 
     var returnedArray = pingPong(number);
 
