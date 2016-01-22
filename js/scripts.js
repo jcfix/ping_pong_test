@@ -41,13 +41,13 @@ var pingPong = function (number) {
 
 // User-interface Logic //
 $(document).ready(function() {
-  $(".btn#getNumber").click(function(event){
+  $(".btn#getNumber").click(function(){
     var number = parseInt($("input#userNumber").val());
 
     if (number <=0 ) {
       alert("That won't do! How about a number greater than or equal to 1?")
     }
-
+    $("ul").empty();
     var returnedArray = pingPong(number);
 
     for (var i = 0; i < returnedArray.length; i++) {
@@ -58,6 +58,6 @@ $(document).ready(function() {
     }
 
     $("#listofNumbers").show();
-    event.preventDefault()
+
   });
 });
