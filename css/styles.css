@@ -16,6 +16,7 @@ body {
   border-radius: 8px;
   background-color: #E04941;
   padding-bottom: 0.5em;
+  margin-left: 10px;
 }
 
 a {
@@ -26,7 +27,8 @@ a {
   border-radius: 8px;
   background-color: #F4D35E;
   padding-bottom: 1em;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-bottom: 2em;
 }
 
 
