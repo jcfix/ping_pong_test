@@ -11,8 +11,25 @@ var errorInput = function(number){
 };
 
 
-//  Script for 2nd Spec: Displaying Numbers //
+//  Script for 2nd Spec: Displaying userNumber //
+// function pingPong(number) {
+//   var endNumber = number
+//   return endNumber;
+// }
+
+
+// Script for 3rd Spec: Displaying list of numbers //
 function pingPong(number) {
   var endNumber = number
-  return endNumber;
-}
+
+  for (var i = 1; i <= number; i++) {
+
+    $("#listofNumbers").append("<li>" + i + "</li>");
+
+  }
+  return number;
+
+};
+
+
+// Script for 4th Spec: Replace number % 3 & 5 with "ping pong"
